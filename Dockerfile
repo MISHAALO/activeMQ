@@ -24,7 +24,7 @@ RUN groupadd -g 1000 activemq &&\
  -Dcom.sun.management.jmxremote.local.only=false \
  -Dcom.sun.management.jmxremote.password.file=${ACTIVEMQ_BASE}/conf/jmx.password \
  -Dcom.sun.management.jmxremote.access.file=${ACTIVEMQ_BASE}/conf/jmx.access \
- -Dcom.sun.management.jmxremote.ssl=false\
+ -Dcom.sun.management.jmxremote.ssl=false \
  -Djava.rmi.server.hostname=XXX.XXX.XXX.XXX "+g' /d01/activemq/bin/env &&\
     rm -f /tmp/apache-activemq*.tar.gz &&\
     mv /tmp/postgresql*.jar /d01/activemq/lib/ &&\
